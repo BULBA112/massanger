@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f2f5;
+}
+
+.login-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-form h2 {
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+  text-align: center;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.chat-container {
+  display: flex;
+  height: 100vh;
+  background-color: white;
+}
+
+.users-list {
+  width: 250px;
+  background-color: #f5f7fb;
+  padding: 1rem;
+  border-right: 1px solid #e0e0e0;
+}
+
+.users-list h3 {
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.users-list ul {
+  list-style: none;
+}
+
+.users-list li {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.chat-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.messages {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  background-color: #fff;
+}
+
+.message {
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border-radius: 8px;
+  max-width: 70%;
+  background-color: #f0f2f5;
+}
+
+.message.own {
+  margin-left: auto;
+  background-color: #0084ff;
+  color: white;
+}
+
+.message.own .username,
+.message.own .timestamp {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.message-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;
+  font-size: 0.85rem;
+}
+
+.username {
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.timestamp {
+  color: #65676b;
+}
+
+.message-text {
+  word-wrap: break-word;
+}
+
+.message-form {
+  display: flex;
+  padding: 1rem;
+  background-color: #f5f7fb;
+  border-top: 1px solid #e0e0e0;
+}
+
+.message-form input {
+  flex: 1;
+  padding: 0.8rem;
+  margin-right: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.8rem 1.5rem;
+  background-color: #0084ff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #0073e6;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+  border-color: #0084ff;
+} 
